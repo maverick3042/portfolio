@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Makokha | Portfolio</title>
+  <link rel="stylesheet" href="portfoliocss.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Erick Makokha</h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills & Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="profile-pic">
+        <img src="images/profile.jpg" alt="Profile picture of Erick Makokha">
+      </div>
+      <h2>Welcome to My Portfolio</h2>
+      <p>Aspiring STEM Educator | EdTech Enthusiast | Data Analyst</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content">
+    <h2>About Me</h2>
+    <p>
+      I am <strong>Erick Makokha</strong>, an aspiring STEM educator passionate about integrating technology into education.
+      With a background in teaching, training in web development, data analytics, and EdTech, I am committed to
+      transforming how learners access and engage with knowledge across Africa.
+    </p>
+  </section>
+
+  <!-- Skills & Projects Section -->
+  <section id="skills" class="content">
+    <h2>Skills</h2>
+    <ul>
+      <li>STEM Education & Teaching</li>
+      <li>Data Analysis (Python, SQL, Pandas, Matplotlib)</li>
+      <li>Web Development (HTML5, CSS3, JavaScript)</li>
+      <li>Educational Technology Integration</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <article>
+      <h3>EduMap Africa</h3>
+      <p>A resource mapping platform designed to showcase and track educational opportunities across Africa.</p>
+    </article>
+    <article>
+      <h3>EduChain for SDG4</h3>
+      <p>A blockchain-based solution to ensure transparency and equity in scholarship distribution for quality education.</p>
+    </article>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="content">
+    <h2>What I Offer</h2>
+    <ul>
+      <li>STEM Training & Curriculum Support</li>
+      <li>Data Analysis & Visualization</li>
+      <li>Educational Technology Integration</li>
+      <li>Virtual Assistance & Administrative Support</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Erick Makokha | All Rights Reserved</p>
+  </footer>
+  <script src="jsportfolio.js"></script>
+</body>
+</html>
